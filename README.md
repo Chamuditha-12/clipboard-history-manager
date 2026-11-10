@@ -12,6 +12,11 @@ A lightweight Chrome extension that automatically saves the text you copy, so yo
 - Shows the source website and how long ago you copied it
 - Dark-themed popup
 
+## Compatibility
+
+Works on any Chromium-based browser: Chrome, Edge, Brave, Opera.
+  
+
 ## Installation (Developer Mode)
 
 1. Download or clone this repository:
