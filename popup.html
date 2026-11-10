@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      width: 340px;
+      max-height: 500px;
+      font-family: Arial, sans-serif;
+      padding: 12px;
+      background: #1e1e2e;
+      color: #fff;
+    }
+    h2 { font-size: 16px; margin-bottom: 10px; }
+    #searchBox {
+      width: 100%;
+      padding: 6px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: none;
+      box-sizing: border-box;
+      background: #2a2a3d;
+      color: #fff;
+    }
+    #historyContainer {
+      max-height: 380px;
+      overflow-y: auto;
+    }
+    .item {
+      background: #2a2a3d;
+      padding: 8px;
+      border-radius: 6px;
+      margin-bottom: 6px;
+      cursor: pointer;
+      position: relative;
+    }
+    .item:hover { background: #35354d; }
+    .item-text {
+      font-size: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 4px;
+    }
+    .item-meta {
+      font-size: 10px;
+      color: #999;
+      display: flex;
+      justify-content: space-between;
+    }
+    .delete-btn {
+      background: #ff4444;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-size: 10px;
+      cursor: pointer;
+    }
+    #clearAllBtn {
+      width: 100%;
+      margin-top: 10px;
+      background: #ff4444;
+      color: white;
+      border: none;
+      padding: 8px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .copied-toast {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #4CAF50;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>📋 Clipboard History</h2>
+  <input type="text" id="searchBox" placeholder="Search history..." />
+  <div id="historyContainer">Loading...</div>
+  <button id="clearAllBtn">Clear All History</button>
+  <div class="copied-toast" id="toast">Copied!</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

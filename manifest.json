@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Clipboard History Manager",
+  "version": "1.0",
+  "description": "Automatically saves your copied text/links so you can reuse them later",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
