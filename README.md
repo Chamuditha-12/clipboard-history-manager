@@ -16,7 +16,7 @@ A lightweight Chrome extension that automatically saves the text you copy, so yo
 
 1. Download or clone this repository:
    ```bash
-   git clone https://github.com/YOUR-USERNAME/clipboard-history-manager.git
+   git clone https://github.com/Chamuditha-12/clipboard-history-manager.git
    ```
 2. Open Chrome and go to `chrome://extensions`
 3. Turn on **Developer mode** (top right)
